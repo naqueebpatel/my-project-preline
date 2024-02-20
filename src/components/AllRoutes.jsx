@@ -1,22 +1,24 @@
-import { Router } from 'lucide-react'
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Cards from './Cards'
-import NavBar from './NavBar'
-import HeroForms from './HeroForms'
-import About from './About'
-import Clients from './Clients'
-import FAQ from './FAQ'
-import Footer from './Footer'
-import Offer from './Offer'
-import Blogs from './Blogs'
-import ErrorPage from './ErrorPage'
-import ContactUs from './Contact'
-import BlogArticle from './BlogPage'
-import Help from './Help'
-import Resources from './Resources'
+import { Router } from 'lucide-react';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Cards from './Cards';
+import NavBar from './NavBar';
+import HeroForms from './HeroForms';
+import About from './About';
+import Clients from './Clients';
+import FAQ from './FAQ';
+import Footer from './Footer';
+import Offer from './Offer';
+import Blogs from './Blogs';
+import ErrorPage from './ErrorPage';
+import ContactUs from './Contact';
+import BlogArticle from './BlogPage';
+import Help from './Help';
+import Resources from './Resources';
+import Carousal from './Carousal';
 
-const AllRoutes = () => {
+const AllRoutes = () =>
+{
     return (
         <>
 
@@ -25,26 +27,27 @@ const AllRoutes = () => {
                 <Route path="/" element={
                     <>
                         <NavBar />
-                        <Offer />
+                        {/* <Offer /> */ }
                         <HeroForms />
                         <About />
-                        {/* <Cards /> */}
+                        <Carousal />
+                        {/* <Cards /> */ }
                         <Clients />
-                        <Help/>
-                        {/* <FAQ /> */}
+                        <Help />
+                        {/* <FAQ /> */ }
                         <Footer />
                     </>
                 } />
-                <Route path='*' element={<ErrorPage />} />
+                <Route path='*' element={ <ErrorPage /> } />
 
-                <Route path='/blog' element={<><NavBar /> <Blogs /> <Footer /></>} />
+                <Route path='/blog' element={ <><NavBar /> <Blogs /> <Footer /></> } />
                 <Route path='/contact' element={
                     <>
                         <NavBar />
                         <ContactUs />
                         <FAQ />
                         <Footer />
-                    </>}
+                    </> }
                 />
 
                 <Route path="/blogArticle" element={
@@ -59,23 +62,23 @@ const AllRoutes = () => {
                 <Route path="/courses" element={
                     <>
                         <NavBar />
-                        <Cards/>
+                        <Cards />
                         <Footer />
                     </>
 
                 } />
 
-<Route path="/resource" element={
+                <Route path="/resource" element={
                     <>
                         <NavBar />
-                        <Resources/>
+                        <Resources />
                         <Footer />
                     </>
 
                 } />
             </Routes>
         </>
-    )
-}
+    );
+};
 
-export default AllRoutes
+export default AllRoutes;

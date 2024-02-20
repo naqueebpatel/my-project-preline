@@ -10,7 +10,7 @@ export default {
     extend: {
       screens:{
         'tablet':{'max':'1159px'}
-      }
+      },
     },
   },
   plugins: [
