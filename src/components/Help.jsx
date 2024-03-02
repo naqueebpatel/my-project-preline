@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Help = () => {
   return (
@@ -7,22 +8,22 @@ const Help = () => {
   {/* <!-- Grid --> */}
   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
     {/* <!-- Card --> */}
-    <a className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+    <NavLink to="/contact" className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
       <div className="p-4 md:p-5">
         <div className="flex">
           <svg className="mt-1 flex-shrink-0 size-5 text-gray-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
 
           <div className="grow ms-5">
             <h3 className="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-              Ask our community
+              Ask our Experts!
             </h3>
             <p className="text-sm text-gray-500">
-              Get help from 40k+ Preline users
+              We're here to help!
             </p>
           </div>
         </div>
       </div>
-    </a>
+    </NavLink>
     {/* <!-- End Card -->
 
     <!-- Card --> */}
@@ -33,10 +34,10 @@ const Help = () => {
 
           <div className="grow ms-5">
             <h3 className="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-              Get help in the app
+              We are just a call away!
             </h3>
             <p className="text-sm text-gray-500">
-              Just head to «Help» in the app
+              Just Dial  <span className="text-blue-600 font-medium dark:text-blue-500">+91 82373 07229</span>
             </p>
           </div>
         </div>
@@ -55,7 +56,7 @@ const Help = () => {
               Email us
             </h3>
             <p className="text-sm text-gray-500">
-              Reach us at <span className="text-blue-600 font-medium dark:text-blue-500">info@site.com</span>
+              <span className="text-blue-600 font-medium dark:text-blue-500">enquiry@codencloud.co.in</span>
             </p>
           </div>
         </div>

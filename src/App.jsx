@@ -3,13 +3,14 @@ import { useLocation } from 'react-router-dom';
 import './App.css';
 import AllRoutes from './components/AllRoutes';
 import { toast } from 'react-toastify';
+import { HSAccordion } from 'preline';
 function App ()
 {
   const location = useLocation();
 
   useEffect( () =>
   {
-    window.HSStaticMethods.autoInit();
+    HSAccordion.autoInit();
   }, [ location.pathname ] );
 
   useLayoutEffect( () =>
