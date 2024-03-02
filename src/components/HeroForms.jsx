@@ -27,7 +27,7 @@ const HeroForms = () =>
                   '. NET DEVELOPER',
                   2000,
                   'SOFTWARE TESTING',
-                  2000
+                  2000,
                 ] }
                   speed={ 50 }
                   wrapper="span"

@@ -12,12 +12,7 @@ function App ()
     window.HSStaticMethods.autoInit();
   }, [ location.pathname ] );
 
-  useLayoutEffect( () =>
-  {
-    toast.info( " UPTO 50% DISCOUNT ON ALL COURSES! Enroll Now!", {
-      theme: "dark",
-    } );
-  }, [] );
+
   return (
     <>
       {/* <NavBar/>
