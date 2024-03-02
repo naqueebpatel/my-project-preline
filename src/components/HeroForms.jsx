@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
+import { data } from '../data/data';
 
 const HeroForms = () =>
 {
@@ -41,7 +42,7 @@ const HeroForms = () =>
                 />
               </h1>
               <p className="text-gray-600 dark:text-gray-400">
-                We provide you with a test account that can be set up in seconds. Our main focus is getting responses to you as soon as we can.
+                Part of Top #5 Coding Insitute's in Pune
               </p>
             </div>
             {/* <!-- End Title -->
@@ -66,7 +67,7 @@ const HeroForms = () =>
 
           <div>
             {/* <!-- Form --> */ }
-            <form>
+            <form action='https://getform.io/f/8af40023-61f3-4dda-b042-c2d81b80f134' method='post'>
 
               <div className="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
                 {/* <!-- Card --> */ }
@@ -89,7 +90,7 @@ const HeroForms = () =>
                       <div>
                         {/* <!-- Floating Input --> */ }
                         <div className="relative">
-                          <input type="text" autoComplete='name' id="hs-floating-underline-input-passowrd" className="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 dark:focus:border-b-gray-600
+                          <input type="text" name='full_name' autoComplete='name' id="hs-floating-underline-input-passowrd" className="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 dark:focus:border-b-gray-600
                           focus:pt-6
                           focus:pb-2
                           focus:outline-none
@@ -113,7 +114,7 @@ const HeroForms = () =>
                       <div>
                         {/* <!-- Floating Input --> */ }
                         <div className="relative">
-                          <input type="email" autoComplete='email' id="hs-floating-underline-input-passowrd" className="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 dark:focus:border-b-gray-600
+                          <input type="email" name='email' autoComplete='email' id="hs-floating-underline-input-passowrd" className="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 dark:focus:border-b-gray-600
                           focus:pt-6
                           focus:pb-2
                           focus:outline-none
@@ -137,7 +138,7 @@ const HeroForms = () =>
                       <div>
                         {/* <!-- Floating Input --> */ }
                         <div className="relative">
-                          <input type="tel" autoComplete='phone' id="hs-floating-underline-input-passowrd" className="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 dark:focus:border-b-gray-600
+                          <input type="tel" name='mobile_number' autoComplete='phone' id="hs-floating-underline-input-passowrd" className="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 dark:focus:border-b-gray-600
                           focus:pt-6
                           focus:pb-2
                           focus:outline-none
@@ -160,16 +161,31 @@ const HeroForms = () =>
                       {/* <!-- Input Group --> */ }
                       <div>
                         {/* <!-- Floating Input --> */ }
-                        <select className="py-3 mt-5 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                          <option selected>Courses</option>
-                          <option>Cooperate</option>
+                        <select name='level' className="py-3 mt-5 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                          <option selected disabled>Level</option>
+                          <option>Corporate/Industry Level</option>
                           <option>College Level</option>
+                        </select>
+                        {/* <!-- End Floating Input --> */ }
+                      </div>
+                      <div>
+                        {/* <!-- Floating Input --> */ }
+                        <select name='course' className="py-3 mt-5 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                          <option selected disabled>Courses</option>
+                          {
+                            data.map( ( item, index ) =>
+                            {
+                              return (
+                                <option key={ index } value={ item.cname }>{ item.cname }</option>
+                              );
+                            } )
+                          }
                         </select>
                         {/* <!-- End Floating Input --> */ }
                       </div>
                     </div>
                     <div>
-                      <select className="py-3 mt-5 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                      <select name='mode' className="py-3 mt-5 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
                         <option selected>Mode</option>
                         <option>Online</option>
                         <option>Offline</option>

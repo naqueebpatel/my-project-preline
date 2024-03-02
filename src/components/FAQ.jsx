@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-const FAQ = () => {
+const FAQ = () =>
+{
   return (
     // <!-- FAQ -->
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      {/* <!-- Title --> */}
+      {/* <!-- Title --> */ }
       <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
         <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Your questions, answered</h2>
         <p className="mt-1 text-gray-600 dark:text-gray-400">Answers to the most frequently asked questions.</p>
       </div>
-      {/* <!-- End Title --> */}
+      {/* <!-- End Title --> */ }
 
       <div className="max-w-2xl mx-auto">
-        {/* <!-- Accordion --> */}
+        {/* <!-- Accordion --> */ }
         <div className="hs-accordion-group">
           <div className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05] active" id="hs-basic-with-title-and-arrow-stretched-heading-one">
             <button className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one">
@@ -22,7 +23,7 @@ const FAQ = () => {
             </button>
             <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
               <p className="text-gray-800 dark:text-gray-200">
-                You may call us on our toll-free number: (+91) (0)8069289001 or Drop us an email at courses@geeksforgeeks.org
+                You may call us on our toll-free number: (+91) 8237307229 or Drop us an email at enquiry@codencloud.co.in
               </p>
             </div>
           </div>
@@ -93,11 +94,11 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        {/* <!-- End Accordion --> */}
+        {/* <!-- End Accordion --> */ }
       </div>
     </div>
     // <!-- End FAQ -->
-  )
-}
+  );
+};
 
-export default FAQ
+export default FAQ;

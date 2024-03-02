@@ -11,7 +11,7 @@ const Carousal = () =>
         "7c3aed",
     ];
     return (
-        <div>
+        <div className="mb-20">
             <div data-hs-carousel='{
     "loadingClasses": "opacity-0",
     "isAutoPlay": true
