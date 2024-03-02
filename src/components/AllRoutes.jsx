@@ -17,8 +17,22 @@ import Help from './Help';
 import Resources from './Resources';
 import Carousal from './Carousal';
 
+import Testimonials from './Testimonials';
+
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 const AllRoutes = () =>
 {
+
+const location = useLocation();
+
+  useEffect( () =>
+
+  {
+    window.HSStaticMethods.autoInit();
+  }, [ location.pathname ] );
+  
     return (
         <>
 
@@ -31,6 +45,7 @@ const AllRoutes = () =>
                         <HeroForms />
                         <About />
                         <Carousal />
+                        <Testimonials/>
                         {/* <Cards /> */ }
                         <Clients />
                         <Help />
