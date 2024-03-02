@@ -25,14 +25,13 @@ import { useEffect } from 'react';
 const AllRoutes = () =>
 {
 
-const location = useLocation();
+    const location = useLocation();
 
-  useEffect( () =>
+    useEffect( () =>
+    {
+        window.HSStaticMethods.autoInit();
+    }, [ location.pathname ] );
 
-  {
-    window.HSStaticMethods.autoInit();
-  }, [ location.pathname ] );
-  
     return (
         <>
 
@@ -43,9 +42,9 @@ const location = useLocation();
                         <NavBar />
                         {/* <Offer /> */ }
                         <HeroForms />
-                        <About />
                         <Carousal />
-                        <Testimonials/>
+                        <About />
+                        <Testimonials />
                         {/* <Cards /> */ }
                         <Clients />
                         <Help />
