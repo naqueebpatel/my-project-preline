@@ -5,10 +5,11 @@ const NavBar = () =>
   return (
     <>
       {/* ========== HEADER ========== */ }
-      <header className="sticky top-0 z-50 w-full text-sm bg-white dark:bg-[#000e14] ">
-        <nav className="relative max-w-[85rem] w-full mx-auto px-4 py-3 md:flex md:justify-between md:items-center md:px-6 lg:px-8">
+      <header className="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
+  <nav className="static max-w-[85rem] w-full bg-white border border-gray-200 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-neutral-800 dark:border-neutral-700" aria-label="Global">
+
           <div className="flex items-center justify-between">
-            <img src='/images/cnc.png' alt='logo' className='w-1/4' />
+            <img src='/images/cnc.png' alt='logo' className='w-1/5' />
             <div className="md:hidden">
               <button type="button" className="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                 <svg className="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" x2="21" y1="6" y2="6" /><line x1="3" x2="21" y1="12" y2="12" /><line x1="3" x2="21" y1="18" y2="18" /></svg>
@@ -40,3 +41,7 @@ const NavBar = () =>
 };
 
 export default NavBar;
+
+
+
+        

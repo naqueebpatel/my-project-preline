@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
-import { data } from '../data/data';
+import { data, dataTwo } from '../data/data';
 
 const HeroForms = () =>
 {
   return (
-    <div className="relative bg-gradient-to-bl from-blue-100 via-transparent dark:from-blue-950 dark:via-transparent">
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div className="relative bg-gradient-to-bl from-blue-100 via-transparent dark:from-blue-950 dark:via-transparent ">
+      <div className="max-w-[85rem] mt-7 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
           <div>
             <img src='/images/cnc.png' alt='logo' className='w-2/4 block ml-auto mr-auto mt-0 mb-0' />
@@ -173,7 +173,7 @@ const HeroForms = () =>
                         <select name='course' className="py-3 mt-5 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
                           <option selected disabled>Courses</option>
                           {
-                            data.map( ( item, index ) =>
+                            dataTwo.map( ( item, index ) =>
                             {
                               return (
                                 <option key={ index } value={ item.cname }>{ item.cname }</option>

@@ -1,4 +1,4 @@
-import { data } from "../data/data";
+import { data, dataTwo } from "../data/data";
 import SingleCard from "./SingleCard";
 
 const Carousal = () =>
@@ -18,7 +18,7 @@ const Carousal = () =>
   }' className="relative">
                 <div className="hs-carousel relative overflow-hidden w-full min-h-[350px] bg-white rounded-lg">
                     <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-                        { data?.map( ( item ) =>
+                        { dataTwo?.map( ( item ) =>
                         {
                             const randIndex = Math.floor( Math.random() * bgColor.length );
                             const color = bgColor[ randIndex ];

@@ -1,11 +1,11 @@
 import SingleCard from './SingleCard';
-import { data } from '../data/data';
+import { data, dataTwo } from '../data/data';
 import { useState } from 'react';
 
 const Cards = () =>
 {
-    const [ courses, setCourses ] = useState( data );
-    const [ allData, setAllData ] = useState( data );
+    const [ courses, setCourses ] = useState( dataTwo );
+    const [ allData, setAllData ] = useState( dataTwo );
     const handleChange = ( event ) =>
     {
         const language = allData.filter( ( elem ) => ( elem.cname.toLowerCase().includes( event.target.value.toLowerCase() ) ) );
@@ -23,7 +23,7 @@ const Cards = () =>
         // <!-- Card Blog -->
         <>
 
-            <form className="flex items-center max-w-lg mx-auto">
+            <form className="flex items-center mt-7 max-w-lg mx-auto">
                 <label htmlFor="voice-search" className="sr-only">Search</label>
                 <div className="relative w-full">
                     <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -40,7 +40,7 @@ const Cards = () =>
                 </button>
             </form>
 
-            <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div className="max-w-[85rem] w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                 {/* <!-- Grid --> */ }
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     { courses?.length === 0 ? <h1 className='w-[80vw]'>No Course Found</h1> : courses?.map( ( elem, index ) =>
