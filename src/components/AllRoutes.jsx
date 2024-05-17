@@ -21,6 +21,7 @@ import Testimonials from './Testimonials';
 
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import FeaturedCourse from './FeaturedCourse';
 
 const AllRoutes = () =>
 {
@@ -42,7 +43,8 @@ const AllRoutes = () =>
                         <NavBar />
                         {/* <Offer /> */ }
                         <HeroForms />
-                        <Carousal />
+                        {/* <Carousal /> */}
+                        <FeaturedCourse/>
                         <About />
                         <Testimonials />
                         {/* <Cards /> */ }

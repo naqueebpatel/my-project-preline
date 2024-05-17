@@ -3,16 +3,15 @@ import React from 'react';
 const Testimonials = () =>
 {
   return (
-    // <!-- Testimonials -->
-    <div className="overflow-hidden bg-slate-800 m-auto rounded-md" >
-      <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        {/* <!-- Title --> */ }
-        <div className="max-w-2xl w-3/4 lg:w-1/2 mb-6 sm:mb-10 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-white font-semibold">
-            Loved by business and individuals across the globe
-          </h2>
-        </div>
-        {/* <!-- End Title -->
+    <div className="overflow-hidden m-auto rounded-md">
+    <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      {/* <!-- Title --> */}
+      <div className="max-w-2xl w-3/4 lg:w-1/2 mb-6 sm:mb-10 md:mb-16 mx-auto">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-blue-500 font-semibold text-center">
+          Loved by business and individuals across the globe
+        </h2>
+      </div>
+      {/* <!-- End Title -->
 
     <!-- Grid --> */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,7 +108,7 @@ const Testimonials = () =>
         <div className="mt-20 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
           {/* <!-- Stats --> */ }
           <div>
-            <h4 className="text-lg sm:text-xl font-semibold text-white">Placement Assistance</h4>
+            <h4 className="text-lg sm:text-xl font-semibold text-black">Placement Assistance</h4>
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">99.95%</p>
             <p className="mt-1 text-gray-400">Till Date</p>
           </div>
@@ -117,7 +116,7 @@ const Testimonials = () =>
 
       <!-- Stats --> */}
           <div>
-            <h4 className="text-lg sm:text-xl font-semibold text-white">Student Enrolled</h4>
+            <h4 className="text-lg sm:text-xl font-semibold text-black">Student Enrolled</h4>
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">342+</p>
             <p className="mt-1 text-gray-400">Happy Faces</p>
           </div>
@@ -125,7 +124,7 @@ const Testimonials = () =>
 
       <!-- Stats --> */}
           <div>
-            <h4 className="text-lg sm:text-xl font-semibold text-white">Faculty Count</h4>
+            <h4 className="text-lg sm:text-xl font-semibold text-black">Faculty Count</h4>
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">15+</p>
             <p className="mt-1 text-gray-400">Experts</p>
           </div>

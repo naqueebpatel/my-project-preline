@@ -5,7 +5,8 @@ import { data, dataTwo } from '../data/data';
 const HeroForms = () =>
 {
   return (
-    <div className="relative bg-gradient-to-bl from-blue-100 via-transparent dark:from-blue-950 dark:via-transparent ">
+    // <div className="relative bg-gradient-to-bl from-blue-100 via-transparent dark:from-blue-950 dark:via-transparent ">
+    <div className='relative'>
       <div className="max-w-[85rem] mt-7 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
           <div>

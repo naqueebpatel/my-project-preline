@@ -1,8 +1,18 @@
+/* global.css */
+
+/* Define the gradient background */
+.bg-purple-gradient {
+  background: linear-gradient(to right, #ffffff, #ffffff); /* Your gradient colors */
+}
+
+/* Apply the gradient to the #root element */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 auto;
   text-align: center;
+  /* Use the gradient class */
+  background: linear-gradient(to right, #ffffff, #dbfcfb, #ffffff); /* Your gradient colors */
 }
 
 .card {
@@ -16,11 +26,13 @@
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
   #root {
-    max-width: 100%; /* Lock screen width for mobile devices */
-    padding: 0 1rem; /* Adjust padding for better mobile display */
+    max-width: 100%;
+    padding: 0 1rem;
+    /* Use the gradient class */
+    background: linear-gradient(to right, #ffffff, #dbfcfb, #ffffff);/* Same gradient for mobile */
   }
 
   .card {
-    padding: 1em; /* Adjust card padding for better mobile display */
+    padding: 1em;
   }
 }
