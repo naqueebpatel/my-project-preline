@@ -22,6 +22,7 @@ import Testimonials from './Testimonials';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import FeaturedCourse from './FeaturedCourse';
+import SortCard from './SortCard';
 
 const AllRoutes = () =>
 {
@@ -31,7 +32,13 @@ const AllRoutes = () =>
     useEffect( () =>
     {
         window.HSStaticMethods.autoInit();
+        const onTop = () => {
+            window.scrollTo(0, 0);
+          };
+          onTop()
     }, [ location.pathname ] );
+
+   
 
     return (
         <>
@@ -45,6 +52,7 @@ const AllRoutes = () =>
                         <HeroForms />
                         {/* <Carousal /> */}
                         <FeaturedCourse/>
+                        <SortCard/>
                         <About />
                         <Testimonials />
                         {/* <Cards /> */ }

@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-3">
-          <p className="text-gray-500">Developed and Managed By <a className="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400" href="https://www.linkedin.com/in/md-naqueeb-patel-a3133a26b/" target="_blank" rel="noopener noreferrer">CNC</a> Team.</p>
+          <p className="text-gray-500">Developed and Managed By <a className="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400" href="https://www.linkedin.com/in/md-naqueeb-patel-a3133a26b/" target="_blank" rel="noopener noreferrer">Naqueeb</a>.</p>
           <p className="text-gray-500">© Code N Cloud 2024. All rights reserved.</p>
         </div>
 

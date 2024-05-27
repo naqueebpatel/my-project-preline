@@ -523,7 +523,7 @@ export const dataTwo = [
     ],
   },
   {
-    image: "https://example.com/images/DS_logo.png",
+    image: "https://e7.pngegg.com/pngimages/125/653/png-clipart-algorithms-data-structures-programs-data-structures-and-algorithms-introduction-to-algorithms-others-miscellaneous-angle.png",
     type: "backend",
     cname: "Data Structure",
     short_desc: "Components that help organize and store data efficiently in computer memory.",
@@ -958,3 +958,31 @@ export const dataTwo = [
     ],
   },
 ];
+
+export const sortData=[
+  {
+    "type": "backend",
+    "image": "https://cdn-icons-png.flaticon.com/128/6213/6213731.png"
+  },
+  {
+    "type": "frontend",
+    "image": "https://example.com/images/frontend_logo.png"
+  },
+  {
+    "type": "database",
+    "image": "https://example.com/images/database_logo.png"
+  },
+  {
+    "type": "data_science",
+    "image": "https://example.com/images/data_science_logo.png"
+  },
+  {
+    "type": "AI",
+    "image": "https://example.com/images/ai_logo.png"
+  },
+  {
+    "type": "ML",
+    "image": "https://example.com/images/ml_logo.png"
+  }
+]
+

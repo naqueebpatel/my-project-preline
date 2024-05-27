@@ -72,9 +72,9 @@ const HeroForms = () =>
 
               <div className="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
                 {/* <!-- Card --> */ }
-                <div className="p-4 sm:p-7 flex flex-col bg-white rounded-2xl shadow-lg dark:bg-slate-900">
+                <div className="p-4 sm:p-7 flex flex-col bg-white rounded-2xl shadow-2xl dark:bg-slate-900">
                   <div className="text-center">
-                    <h1 className="block text-2xl font-bold text-gray-800 dark:text-white">Book Your Free Trial</h1>
+                    <h1 className="block text-2xl font-bold text-red-800 dark:text-white">Book Your Free Trial</h1>
                   </div>
                   <div className='mt-5'>
                     <a href='https://wa.me/+8237307229' target='__blank' className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
