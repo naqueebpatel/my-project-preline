@@ -24,13 +24,18 @@ const FeaturedCourse = () => {
                             {/* <!-- Card --> */}
                             <div className="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-neutral-900 dark:border-neutral-800">
                                 <h4 className="font-medium text-lg text-gray-800 dark:text-neutral-200">Demo</h4>
-                                <span className="mt-6 font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-neutral-200">Free</span>
-                                <p className="mt-2 text-sm text-gray-500 dark:text-neutral-500">Any Course of your Choice</p>
+                                <span className="mt-5 font-bold text-3xl md:text-4xl xl:text-5xl text-red-800 dark:text-neutral-200">
+                                FREE
+                                </span>
+                                
+                                <p className="mt-2 text-sm text-gray-500 dark:text-neutral-500">For 12th, Diploma ,College Graduates & Corporates</p>
 
                                 <ul className="mt-7 space-y-2.5 text-sm">
+                                
                                     <li className="flex space-x-2">
+                                        <svg className="flex-shrink-0 mt-0.5 size-4 text-violet-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
                                         <span className="text-gray-800 dark:text-neutral-400">
-                                            For 12th, Diploma,College Graduates & Corporates
+                                        <b>Any Course of your Choice</b>
                                         </span>
                                     </li>
 
@@ -97,7 +102,7 @@ const FeaturedCourse = () => {
           <!-- Card --> */}
           <div className="flex flex-col bg-white border-2 border-violet-900 text-center shadow-xl rounded-2xl p-4 md:p-8 dark:bg-neutral-900 dark:border-violet-700">
                                 <p className="mb-3"><span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg text-xs uppercase font-semibold bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-white">Most popular</span></p>
-                                <h4 className="font-medium text-lg text-gray-800 dark:text-neutral-200">Full Stack Web Development</h4>
+                                <h4 className="font-medium text-lg text-gray-800 dark:text-neutral-200">Full Stack Web Development(MERN)</h4>
                                 <span className="mt-5 font-bold text-3xl md:text-4xl xl:text-5xl text-red-800 dark:text-neutral-200">
                                 ₹59999-/
                                 </span>
@@ -138,7 +143,7 @@ const FeaturedCourse = () => {
                             <div className="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-neutral-900 dark:border-neutral-800">
                                 <h4 className="font-medium text-lg text-gray-800 dark:text-neutral-200">React-Java FullStack Development</h4>
                                 <span className="mt-5 font-bold text-3xl md:text-4xl xl:text-5xl text-red-800 dark:text-neutral-200">
-                                ₹54999-/
+                                ₹64999-/
                                 </span>
                                 <p className="mt-2 text-sm text-gray-500 dark:text-neutral-500">For 12th, Diploma ,College Graduates & Corporates</p>
 

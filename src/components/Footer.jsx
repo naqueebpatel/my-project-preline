@@ -36,7 +36,7 @@ const Footer = () => {
           <p className="text-gray-500">© Code N Cloud 2024. All rights reserved.</p>
         </div>
 
-        <div className="mt-3 space-x-2">
+        {/* <div className="mt-3 space-x-2">
           {socialMediaLinks.map((link, index) => (
             <a
               key={index}
@@ -51,7 +51,7 @@ const Footer = () => {
               </svg>
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </footer>
   );

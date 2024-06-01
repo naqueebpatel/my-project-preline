@@ -1,19 +1,12 @@
 import React from 'react';
 import { sortData } from '../data/data';
+import { NavLink } from 'react-router-dom';
 
 const SortCard = ({ data }) => {
-    // Define keyframes
-    const shineKeyframes = {
-        '0%': { right: '100%' },
-        '100%': { right: '-100%' },
-    };
-
-    // Define styles for shining effect
-    const shineStyle = {
-        position: 'absolute',
-        inset: 0,
-        background: 'linear-gradient(to right, transparent,#ffffff, transparent)',
-        animation: 'shine 3s linear infinite',
+    // Function to generate random background color
+    const getRandomColor = () => {
+        const colors = ['#FFC0CB', '#ADD8E6', '#90EE90', '#FFD700', '#FFA07A', '#BA55D3', '#87CEEB', '#20B2AA'];
+        return colors[Math.floor(Math.random() * colors.length)];
     };
 
     return (
@@ -24,8 +17,7 @@ const SortCard = ({ data }) => {
             </div>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
                 {sortData.map((item, index) => (
-                    <a key={index} className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition duration-300 transform hover:-translate-y-1 dark:bg-neutral-900 dark:border-neutral-800 relative overflow-hidden" href="#">
-                        <div style={shineStyle}></div>
+                    <NavLink to="/courses" key={index} className="group flex flex-col border shadow-sm rounded-xl hover:shadow-md transition duration-300 transform hover:-translate-y-1 relative overflow-hidden" href="#" style={{ backgroundColor: getRandomColor() }}>
                         <div className="p-4 md:p-5">
                             <div className="flex justify-between items-center">
                                 <div className="flex items-center">
@@ -41,15 +33,9 @@ const SortCard = ({ data }) => {
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </NavLink>
                 ))}
             </div>
-            {/* Apply keyframes */}
-            <style>{`
-                @keyframes shine {
-                    ${Object.entries(shineKeyframes).map(([key, value]) => `${key} { ${Object.entries(value).map(([prop, val]) => `${prop}: ${val};`).join(' ')} }`).join(' ')}
-                }
-            `}</style>
         </div>
     )
 }
