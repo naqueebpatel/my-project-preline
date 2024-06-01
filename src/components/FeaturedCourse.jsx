@@ -64,7 +64,7 @@ const FeaturedCourse = () => {
                             <div className="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-neutral-900 dark:border-neutral-800">
                                 <h4 className="font-medium text-lg text-gray-800 dark:text-neutral-200">Frontend Development</h4>
                                 <span className="mt-5 font-bold text-3xl md:text-4xl xl:text-5xl text-red-800 dark:text-neutral-200">
-                                ₹34999-/
+                                ₹39999-/
                                 </span>
                                 <p className="mt-2 text-sm text-gray-500 dark:text-neutral-500">For 12th, Diploma ,College Graduates & Corporates</p>
 
